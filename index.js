@@ -1,6 +1,7 @@
 const canvas = document.getElementById("1")
 const startBtn = document.getElementById("start")
 const triangleBtn = document.getElementById("line")
+const numOfIteration = document.getElementById("num")
 
 let activated = false
 
@@ -59,7 +60,7 @@ function drawTriangle(A, B, C) {
 }
 
 function startWhile() {
-    for(let x = 0; x<=10; x++){
+    for(let x = 0; x<numOfIteration.value; x++){
         getNewDot()
     }
     
